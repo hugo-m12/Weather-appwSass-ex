@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss\\styles.scss","styles.css"],"names":[],"mappings":"AAAA;EACI,+CAAA;ACCJ","file":"styles.css","sourcesContent":["body{\r\n    font-family: 'Open Sans', Helvetica, sans-serif;\r\n}","body {\n  font-family: \"Open Sans\", Helvetica, sans-serif;\n}"]}
