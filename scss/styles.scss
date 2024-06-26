@@ -1,3 +1,151 @@
+@import "variables";
+@import "mixins";
+
+
 body{
     font-family: 'Open Sans', Helvetica, sans-serif;
+    padding: 100px;
+    background: rgb(152,190,187);
+    background: linear-gradient(275deg, rgba(152,190,187,1) 35%, rgba(195,112,127,1) 70%); 
+}
+
+.main-container{
+    &:hover{
+        @include darkmode1;
+        @include darkmode2;
+    }
+    .flex{
+        display: flex;
+    }
+    -webkit-box-shadow: 9px 12px 13px -10px rgba(0,0,0,0.64);
+    -moz-box-shadow: 9px 12px 13px -10px rgba(0,0,0,0.64);
+    box-shadow: 9px 12px 13px -10px rgba(0,0,0,0.64);
+    border-radius: 20px;
+    width: 809px;
+    height: 391px;
+    background-color: white;
+
+    .side-panel {
+        &:hover{
+            @include darkmode1;
+            border-radius: 20px;
+        }
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        height: 391px;
+        p{
+            font-weight: bold;
+        }
+    }
+    .right-panel {
+        &:hover{
+            @include darkmode2;
+        }
+        width: 612px;
+        height: 391px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #E7D6C6;
+
+        h2{
+            margin-left: 20px;
+        }
+        input{
+            border-radius: 20px;
+            border-style: none;
+            width: 209px;
+            height: 33px;
+            margin-left: 137px;
+            margin-top: 20px;
+            text-align: right;
+        }
+        .big-rectangle{
+            &:hover{
+                @include darkmode1;
+            }
+            .flex2{
+                display: flex;
+                flex-direction: column;
+            }
+            @include big-rectangle;
+            text-align: right;
+            img{
+                width: 76px;
+                height: 76px;
+                position: relative;
+                bottom: 56px;
+                left: 7px;
+            }
+            p{
+                font-weight: bold;
+                margin: 0;
+                padding:0;
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+            h2{
+                margin: 0;
+                padding: 0;
+                margin-right: 10px;
+            }
+        }
+        .small-rectangle{
+            &:hover{
+                @include darkmode1;
+            }
+            @include small-rectangle;
+            text-align: right;
+            .flex2{
+                display: flex;
+                flex-direction: column;
+            }
+
+            img{
+                width: 60px;
+                height: 60px;
+                position: relative;
+                left: 10px;
+                bottom: 40px;
+            }
+
+            p{
+                font-weight: bold;
+                margin: 0;
+                padding:0;
+                margin-top: 20px;
+                margin-right: 15px;
+
+            }
+            h2{
+                margin: 0;
+                padding: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+    .units{
+        .flex{
+            gap: 20px;
+            justify-content: end;
+            margin-right: 26px;
+        }
+        .slider {
+            position: relative;
+            top:16px;
+            right: 95px;
+            cursor: pointer;
+            padding: 0;
+            margin: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+          
+        width: 100%;
+        text-align: right;
+        .green{
+            color: green;
+        }
+    }
 }
