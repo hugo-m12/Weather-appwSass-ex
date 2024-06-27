@@ -16,15 +16,3 @@
     margin-top: 20px;
     margin-left: 20px;
 }
-
-
-@mixin darkmode1{
-    color: $darkmodefontcolor;
-    background-color: $darkmodebgcolor1;
-}
-
-
-@mixin darkmode2 {
-    color: $darkmodefontcolor;
-    background-color: $darkmodebgcolor2;
-}
