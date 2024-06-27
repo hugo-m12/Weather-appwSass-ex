@@ -15,8 +15,14 @@ body {
 .main-container:hover {
   color: white;
   background-color: #575555;
+}
+.main-container:hover .right-panel {
   color: white;
   background-color: #2F2E2E;
+}
+.main-container:hover .big-rectangle, .main-container:hover .small-rectangle {
+  color: white;
+  background-color: #575555 !important;
 }
 .main-container .flex {
   display: flex;
@@ -26,10 +32,6 @@ body {
   text-align: center;
   width: 200px;
   height: 391px;
-}
-.main-container .side-panel:hover {
-  color: white;
-  background-color: #575555;
   border-radius: 20px;
 }
 .main-container .side-panel p {
@@ -41,10 +43,6 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #E7D6C6;
-}
-.main-container .right-panel:hover {
-  color: white;
-  background-color: #2F2E2E;
 }
 .main-container .right-panel h2 {
   margin-left: 20px;
@@ -66,10 +64,6 @@ body {
   margin-right: 2px;
   margin-left: 20px;
   text-align: right;
-}
-.main-container .right-panel .big-rectangle:hover {
-  color: white;
-  background-color: #575555;
 }
 .main-container .right-panel .big-rectangle .flex2 {
   display: flex;
@@ -103,10 +97,6 @@ body {
   margin-top: 20px;
   margin-left: 20px;
   text-align: right;
-}
-.main-container .right-panel .small-rectangle:hover {
-  color: white;
-  background-color: #575555;
 }
 .main-container .right-panel .small-rectangle .flex2 {
   display: flex;
